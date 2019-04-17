@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  xmrig:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: blackplane/xmrig
+    restart: always
+    container_name: "skysniffer-run"
+    environment:
+      XMRIG_JSON_CONFIG_PATH: "/app/etc/config.json"
+    volumes:
+      - ${PWD}:/app/etc
+

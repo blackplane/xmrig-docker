@@ -1,25 +1,71 @@
 {
     "algo": "cryptonight",
+    "api": {
+        "port": 0,
+        "access-token": null,
+        "id": null,
+        "worker-id": null,
+        "ipv6": false,
+        "restricted": true
+    },
+    "asm": true,
+    "autosave": true,
     "av": 0,
     "background": false,
     "colors": true,
     "cpu-affinity": null,
     "cpu-priority": null,
-    "donate-level": 0,
+    "donate-level": 5,
+    "huge-pages": true,
+    "hw-aes": null,
     "log-file": null,
+    "max-cpu-usage": 75,
+    "pools": [
+        {
+            "url": "pool.supportxmr.com:5555",
+            "user": "49V2MV1Z5PL6fsrD3VKnAX1ZWBCcgSeSYJdSAZYqV66tHf8VRrzmyG6FqQCYvAMTyc541ncKu5JWCSH7kH6bjuq16zkJgqj",
+            "pass": "docker xmrig",
+            "rig-id": null,
+            "nicehash": false,
+            "keepalive": true,
+            "variant": -1,
+            "enabled": true,
+            "tls": false,
+            "tls-fingerprint": null
+        }
+    ],
     "print-time": 60,
     "retries": 5,
     "retry-pause": 5,
     "safe": false,
-    "syslog": false,
-    "threads": null,
-    "pools": [
+    "threads": [
         {
-            "url": "mine.xmrpool.net:7777",
-            "user": "43FtckLEn9BSWP6msnrRNpcZUWVGrr47WBZ7PSHcyF44HFhaRoLmRZK4kx7TFh3Ryh6r3faNiQxNQT6BL1AuiZoEDrNsuum",
-            "pass": "workername",
-            "keepalive": true,
-            "nicehash": false
+            "low_power_mode": 1,
+            "affine_to_cpu": false,
+            "asm": true
+        },
+        {
+            "low_power_mode": 1,
+            "affine_to_cpu": false,
+            "asm": true
+        },
+        {
+            "low_power_mode": 1,
+            "affine_to_cpu": false,
+            "asm": true
+        },
+        {
+            "low_power_mode": 1,
+            "affine_to_cpu": false,
+            "asm": true
+        },
+        {
+            "low_power_mode": 1,
+            "affine_to_cpu": false,
+            "asm": true
         }
-    ]
+    ],
+    "user-agent": null,
+    "syslog": false,
+    "watch": true
 }
