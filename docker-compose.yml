@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 
 services:
   xmrig:
@@ -6,6 +6,10 @@ services:
       context: .
       dockerfile: Dockerfile
     image: blackplane/xmrig
+    deploy:
+      resources:
+        limits:
+          cpus: "1.00"
     restart: always
     container_name: "skysniffer-run"
     environment:
